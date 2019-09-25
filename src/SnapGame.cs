@@ -24,7 +24,7 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
-				myGame.FlipNextCard ();
+				myGame.Start ();
 			}
 			
 			if (myGame.IsStarted)
@@ -43,7 +43,7 @@ namespace CardGames
 				}
 				else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
 				{
-					myGame.Player (1);
+					myGame.PlayerHit (1);
 					SwinGame.LoadSoundEffectNamed("Sound2", "sound2.wav");
 					SwinGame.PlaySoundEffect("Sound2");
 				}
